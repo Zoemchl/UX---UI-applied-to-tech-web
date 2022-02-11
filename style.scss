@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    .background{
+        background-image: url(img/background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        filter: white;
+        h2{
+            font-family: 'poppins';
+            color: #393939;
+            font-size: 40px;
+            font-weight: 800;
+            line-height: 40px;
+            padding: 30px 30px;
+        }
+        .textZone{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            .rectangle{
+                margin-top: 40px;
+                background-color: rgba(255, 255, 255, 0.548);
+                height: 400px;
+                width: 900px;
+                border-radius: 20px;
+                backdrop-filter: blur(8px);
+                box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.219);
+                p{
+                    padding: 7% 7% 0 7%;
+                    font-family: dogica;
+                    font-size: 20px;
+                    line-height: 50px;
+                    color: #393939;
+                }
+                #questionFirstName{
+                    height: 100px;
+                }
+                #cUser{
+                    padding: 0% 7%;
+                    opacity: 0;
+                    font-size: 18px;
+                    span{
+                        animation: clignote 0.8s linear infinite;
+                    }
+                }
+                .flex{
+                    display: flex;
+                    
+                    align-items: center;
+                    input{
+                        background-color: rgba(255, 255, 255, 0);
+                        height: 150px;
+                        border: solid 2px rgba(0, 0, 0, 0);
+                        font-family: dogica;
+                        font-size: 20px;
+                    }
+                    input:focus {
+                        outline:  none;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+@keyframes clignote {  
+    50% { opacity: 0; }
+}
+@keyframes yo{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
