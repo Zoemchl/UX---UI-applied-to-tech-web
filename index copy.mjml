@@ -1,0 +1,65 @@
+<mjml>
+    <mj-body background-color="#FFFFFF" max-width="600px">
+        <mj-section vertical-align="middle" background-url="img/header_img.png"
+              background-size="cover"
+              background-repeat="no-repeat">
+            <mj-column>
+                <mj-image src="img/logo.png" width="170px"></mj-image>
+                <mj-text color="#CC00FF" font-weight="bold" font-size="20px" font-family="Poppins, Calibri" height="50px" align="center">CODING & DIGITAL INNOVATION</mj-text>
+            </mj-column>
+        </mj-section>
+        <mj-section>
+            <mj-column>
+                <mj-text font-size="20px" font-weight="bold" align="center" padding="20px 100px" color="#393939">BIENVENUE DANS LE MONDE DU WEB</mj-text>
+            </mj-column>       
+        </mj-section>
+        <mj-divider border-width="2px" width="525px" border-color="#CC00FF"></mj-divider>
+        <mj-section padding="50px 0">
+            <mj-column width="400px" background-color="#ECECEC">
+                <mj-text font-size="20px" color="#393939" font-family="Poppins">Bienvenue dans le monde du web</mj-text>
+                <mj-text font-size="14px" color="#393939">Merci de t'être inscrit à nos mini-formations coding made in IIM. Chez nous, on croit au learning by doing ! Alors, prêt pour ton premier projet ?</mj-text>
+                <mj-button href="iim/formation" background-color="#CC00FF" border-radius="0">
+                    Voir les formations
+                </mj-button>
+            </mj-column>
+        </mj-section>
+        <mj-divider border-width="2px" width="525px" border-color="#CC00FF"></mj-divider>
+        <mj-section padding-bottom="0">
+            <mj-column>
+                <mj-text font-family="Roboto" font-weight="bold" font-size="20px" align="center" color="#393939">REJOINS LA RÉVOLUTION NUMÉRIQUE</mj-text>
+                <mj-button href="iim/formation" background-color="#CC00FF" border-radius="25px" font-weight="bold">
+                    CANDIDATER
+                </mj-button>
+            </mj-column>
+        </mj-section>
+        <mj-section>
+            <mj-column>
+                <mj-image src="img/photos.png"></mj-image>
+                <mj-button href="iim/formation" background-color="transparent" color="#393939" border="1px solid #CC00FF" border-radius="0">
+                    Journées portes ouvertes
+                </mj-button>
+            </mj-column>
+        </mj-section>
+        <mj-section background-url="img/header_img.png">
+            <mj-column>
+                <mj-social>
+                    <mj-social-element name="facebook">
+                    </mj-social-element>
+                    <mj-social-element name="twitter">
+                    </mj-social-element>
+                    <mj-social-element name="instagram">
+                    </mj-social-element>
+                    <mj-social-element name="linkedin">
+                    </mj-social-element>
+                    <mj-social-element name="youtube">
+                    </mj-social-element>
+                </mj-social>
+                <mj-text align="center" color="grey" >www.iim.fr </br>Admissions : 01 81 00 30 33 </br>
+                admissions@iim.fr</mj-text>
+                <mj-text align="center" color="grey" font-size="8px" text-decoration="underline" >Je ne veux plus recevoir de mail de l'IIM Digital School</mj-text>
+                
+            </mj-column>
+        </mj-section>
+
+    </mj-body>
+</mjml>
