@@ -48,8 +48,14 @@ window.addEventListener('keypress', function (e) {
             activatedLastName = false
             console.log(varlastName)
             document.getElementById('questionFirstName').style.display = "none"
-            document.getElementById('cUser').style.display = "none"
+            document.getElementById('firstSection').style.display = "none"
+            scrollDiv.style.display = "flex"
+            document.getElementById('end').style.display = "flex"
+            document.getElementById('footer').style.display = "flex"
             
+            txt = `Bienvenue ${varName} ${varlastName}!`
+            i = 0
+            typeText()
         }
     }
 })
@@ -62,7 +68,6 @@ function typeText() {
     }
 }
 
-scrollDiv.style.display = "flex"
-            txt = `Bienvenue ${varName} ${varlastName}!`
-            i = 0
-            typeText()
+// txt = `Bienvenue ${varName} ${varlastName}!`
+//             i = 0
+//             typeText()
