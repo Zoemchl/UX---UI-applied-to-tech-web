@@ -3,11 +3,15 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: "dogica";
+  src: url("https://ux-les-brocolis.projets.iim.fr/fonts/dogicabold.ttf") format("truetype"), url("https://ux-les-brocolis.projets.iim.fr/fonts/dogica.ttf") format("truetype");
+}
 body {
   height: 100vh;
 }
 body .background {
-  background-image: url(img/background.png);
+  background-image: url(img/Intersection\ 3.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -19,7 +23,7 @@ body .background h2 {
   font-size: 40px;
   font-weight: 800;
   line-height: 40px;
-  padding: 30px 30px;
+  padding: 30px 60px;
 }
 body .background .textZone {
   width: 100%;
@@ -41,6 +45,7 @@ body .background .textZone .rectangle p {
   font-size: 20px;
   line-height: 50px;
   color: #393939;
+  font-weight: 200;
 }
 body .background .textZone .rectangle #questionFirstName {
   height: 100px;
@@ -66,6 +71,111 @@ body .background .textZone .rectangle .flex input {
 }
 body .background .textZone .rectangle .flex input:focus {
   outline: none;
+}
+
+.scrollSection {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+}
+
+.scroll {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 2px solid #393939;
+  width: 80px;
+  height: 200px;
+  border-radius: 50px;
+  margin-top: -80px;
+  margin-left: 50px;
+}
+.scroll h2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.scroll h2 span {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.end {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  margin-top: 50px;
+}
+.end form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 2rem;
+  gap: 1rem;
+}
+.end form input[type=email] {
+  padding: 0.5rem;
+  border: none;
+  border-left: 2px solid #C000F0;
+  background-color: transparent;
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  color: #C000F0;
+}
+.end form input[type=email]:focus {
+  border: 2px solid #C000F0;
+}
+.end form input[type=submit] {
+  padding: 0.25rem 1rem;
+  background-color: transparent;
+  border: 2px solid #C000F0;
+  border-radius: 4px;
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  color: #C000F0;
+}
+.end .text_end {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  color: #C000F0;
+  width: 80%;
+}
+.end .text_end strong, .end .text_end a {
+  color: white;
+  background-color: #C000F0;
+  font-weight: 500;
+}
+.end .text_end strong a, .end .text_end a a {
+  text-transform: uppercase;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 4rem;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+footer img {
+  height: 2rem;
+  width: auto;
+}
+footer p {
+  color: #C000F0;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+footer p a {
+  color: #C000F0;
 }
 
 @keyframes clignote {

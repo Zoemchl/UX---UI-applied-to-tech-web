@@ -6,6 +6,8 @@ var userName = document.getElementById('name')
 var varName = ""
 var activated = true
 var activatedLastName = true
+var firstSection = document.getElementById('firstSection')
+var scrollDiv = document.getElementById('scroll')
 
 function typeWriter() {
     if (i < txt.length) {
@@ -37,7 +39,6 @@ function namePrint(){
     txt = `Ok super ${varName}, et ton nom alors ?`
     i = 0
     typeWriter()
-    
 }
 
 window.addEventListener('keypress', function (e) {
@@ -46,6 +47,22 @@ window.addEventListener('keypress', function (e) {
             varlastName = userName.value   
             activatedLastName = false
             console.log(varlastName)
+            document.getElementById('questionFirstName').style.display = "none"
+            document.getElementById('cUser').style.display = "none"
+            
         }
     }
 })
+
+function typeText() {
+    if (i < txt.length) {
+    document.getElementById("divText").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+    }
+}
+
+scrollDiv.style.display = "flex"
+            txt = `Bienvenue ${varName} ${varlastName}!`
+            i = 0
+            typeText()
